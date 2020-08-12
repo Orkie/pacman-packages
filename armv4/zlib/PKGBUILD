@@ -1,17 +1,17 @@
 
 # Maintainer: WinterMute <davem@devkitpro.org>
-pkgname=armv4-zlib
+pkgname=dkp-armv4-zlib
 pkgver=1.2.11
 pkgrel=1
-pkgdesc='Deflate compression method library (for Nintendo DS homebrew development)'
+pkgdesc='Deflate compression method library (for armv4 homebrew development)'
 arch=('any')
 url='http://www.zlib.net/'
 license=('zlib')
 options=(!strip libtool staticlibs)
-source=("http://downloads.devkitpro.org/packages/sources/zlib-$pkgver.tar.xz")
-sha256sums=('4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066')
+source=("https://zlib.net/zlib-1.2.11.tar.gz")
+sha256sums=('c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1')
 makedepends=('devkitpro-pkgbuild-helpers')
-groups=('armv4-portlibs')
+groups=('dkp-armv4-portlibs')
 
 build() {
   cd zlib-$pkgver

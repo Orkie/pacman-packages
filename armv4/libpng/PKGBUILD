@@ -1,17 +1,16 @@
 # Maintainer:  Dave Murphy <davem@devkitpro.org>
 
-pkgname=armv4-libpng
+pkgname=dkp-armv4-libpng
 pkgver=1.6.37
 pkgrel=1
-pkgdesc='PNG format graphic files library (for Nintendo armv4 homebrew development)'
+pkgdesc='PNG format graphic files library (for armv4 homebrew development)'
 arch=('any')
 url='http://www.libpng.org'
 license=('custom')
 options=(!strip libtool staticlibs)
-depends=('armv4-zlib')
-groups=('armv4-portlibs')
-makedepends=('armv4-pkg-config' 'devkitpro-pkgbuild-helpers')
-groups=('armv4-portlibs')
+depends=('dkp-armv4-zlib')
+groups=('dkp-armv4-portlibs')
+makedepends=('devkitpro-pkgbuild-helpers')
 source=("https://download.sourceforge.net/libpng/libpng-$pkgver.tar.xz")
 sha256sums=('505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca')
 
