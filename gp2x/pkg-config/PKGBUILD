@@ -1,0 +1,16 @@
+
+# Maintainer: WinterMute <davem@devkitpro.org>
+pkgname=gp2x-pkg-config
+pkgver=0.29
+pkgrel=1
+pkgdesc='pkg-config wrapper (for GP2X homebrew development)'
+arch=('any')
+url='http://devkitpro.org/'
+source=('pkg-config.in')
+sha256sums=('d157b7629fdf01b63eab04f43e8f9a05b566b4b87441e25b7669e9f36931b805')
+groups=('gp2x-dev')
+
+package() {
+  install -d "$pkgdir"/opt/devkitpro/portlibs/gp2x/bin
+  cp "$srcdir"/pkg-config.in "$pkgdir"/opt/devkitpro/portlibs/gp2x/bin/arm-none-eabi-pkg-config
+}
